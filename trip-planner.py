@@ -23,7 +23,7 @@ def ticket_cost():
         print("No tickets are available in the inputted city")
         prices == 0
 
-#Asks for ticket quantity
+# Asks for ticket quantity
 def quantity():                               
     global amount
     amount = int(input('How many tickets are you looking for? (Enter a number between 1 and 6) '))
@@ -34,7 +34,7 @@ def quantity():
     else:
         print('Please choose an amount between 1-6')
 
-#Asks user if they wish to book a hotel
+# Asks user if they wish to book a hotel
 def hotel_stay():                               
     hotel = input('Will you be needing a hotel? Y/N: ').lower()
     if hotel == ('y'):
@@ -43,7 +43,7 @@ def hotel_stay():
         print('Your total is ${}'.format(total_no_hotel))
         input("press any key to exit")
 
-#Prompts user to select hotel and stores price to each hotel
+# Prompts user to select hotel and stores price to each hotel
 def hotel_choice():
     global hotel_prices                               
     hotel_selection = input('Which hotel would you like to stay at? ').lower()
